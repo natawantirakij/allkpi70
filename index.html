@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ระบบสารสนเทศตัวชี้วัด พ.ร.บ. งบประมาณรายจ่ายประจำปี พ.ศ. 2570 (701 รายการ)</title>
+  <title>ตัวชี้วัด พ.ร.บ. งบประมาณรายจ่ายประจำปี พ.ศ. 2570 (701 รายการ)</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -33,11 +33,7 @@
         <button onclick="switchTab('agency')" id="tabBtn-agency" class="px-3.5 py-2 rounded-lg text-xs md:text-sm font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition">
           2. เจาะลึกรายหน่วยงาน (ครบ 3 ระดับ)
         </button>
-        <label class="cursor-pointer px-3 py-2 rounded-lg text-xs md:text-sm font-medium bg-indigo-600 hover:bg-indigo-500 text-white transition">
-          + นำเข้า CSV เพิ่ม
-          <input type="file" id="csvFileInput" accept=".csv" class="hidden" onchange="importCSV(event)" />
-        </label>
-        <button onclick="exportCSV()" class="px-3 py-2 rounded-lg text-xs md:text-sm font-medium bg-emerald-600 hover:bg-emerald-500 text-white transition">
+                <button onclick="exportCSV()" class="px-3 py-2 rounded-lg text-xs md:text-sm font-medium bg-emerald-600 hover:bg-emerald-500 text-white transition">
           ส่งออก CSV
         </button>
       </div>
